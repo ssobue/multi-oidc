@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ja"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+  <title>OpenID Connect Sample</title>
+</head>
+
+<body>
+<div>ID：<span sec:authentication="principal.name"></span></div>
+<div>Name：<span sec:authentication="principal.attributes['name']"></span></div>
+</body>
+</html>
